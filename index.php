@@ -56,7 +56,7 @@
                          
 						<!-- Search -->
 						<div class="search-box">
-							<form action="./search" method="post">
+							<form action="#" method="post">
 								<div class="form-group search-location">
 									<input type="text" class="form-control" name="locationsearch" placeholder="Search Address,City,State">
 									<span class="form-text" style="color: rgb(54, 52, 52);font-weight:bolder;font-size:larger;">Based on your Location</span>
