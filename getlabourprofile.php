@@ -24,7 +24,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["salary"] . 
     "</td><td>" . $row["latitude"] . "</td><td>" . $row["logtitude"] . "</td><td>" . $row["temprature"] . "</td><td>"
-      . $row["humidity"] . "</td><td>". $row["gas"] ."</td><td>". $row["height"] ."</td><tr>";
+    . $row["humidity"] . "</td><td>". $row["gas"] ."</td><td>". $row["height"] ."</td><tr>";
   }
   echo "</table></div>";
   // echo $row1["latitude"];
