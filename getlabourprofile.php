@@ -46,7 +46,7 @@ $conn->close();
       console.log(logbhai);
       const location = { lat: latbhai, lng: logbhai };
       const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 20,
+      zoom: 18,
       center: location,
       });
       // The marker, position

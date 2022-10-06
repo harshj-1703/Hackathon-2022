@@ -53,6 +53,29 @@ $_SESSION['id'] = $_GET['id'];
             </ul>
         </nav>
     </header>
+    <div id="divID">
+        <?php
+            require './connect.php';
+            // $id = $_GET['id'];
+            $id = $_SESSION['id'];
+            $sql = "SELECT * FROM labours where id=$id";
+            $result = $conn->query($sql);
+            
+            if ($result->num_rows > 0) {
+              // output data of each row
+              echo "<div id='div1' style='text-align:center;'><table border='2' width='100%' height='20%' style='text-align:center;font-size:30px; id='table'>
+              <tr><th>NAME</th><th>WORK</th><th>SALARY</th><th>LATITUDE</th><th>LOGTITUDE</th></tr>";
+              while($row = $result->fetch_assoc()) {
+                echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["salary"] . 
+                "</td><td>" . $row["latitude"] . "</td><td>" . $row["logtitude"] . "</td></tr>";
+              }
+              echo "</table></div>";
+            } else {
+              echo "0 results";
+            }
+            $conn->close();
+        ?>
+    </div>
     <div id="hj"></div>
     <br>
     <div id="map" style='width:100%;height:500px;'></div>
@@ -60,16 +83,19 @@ $_SESSION['id'] = $_GET['id'];
 </div>
 </body>
 <script>
-  setInterval(function ()
-  {
+setTimeout(function(){
+    $('#divID').remove();
+}, 5000);
+setInterval(function ()
+{
     $.ajax({
-      type: "GET",
-      url: 'http://localhost/Hackathon 2022/getlabourprofile.php',
-      success: function(res){
+        type: "GET",
+        url: 'http://localhost/Hackathon 2022/getlabourprofile.php',
+        success: function(res){
         $('#hj').html(res);
-      },
-      dataType:'html',
+        },
+        dataType:'html',
     });
-  }, 2000);
+}, 5000);
 </script>
 </html>
