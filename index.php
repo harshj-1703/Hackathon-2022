@@ -179,14 +179,14 @@
 </html>
 
 <style>
-    /* Set the size of the div element that contains the map */
-    #map {
-        height: 200px;
-        /* The height is 400 pixels */
-        width: 200px;
-        /* The width is the width of the web page */
-      }
-  </style>
+  /* Set the size of the div element that contains the map */
+  #map {
+      height: 200px;
+      /* The height is 400 pixels */
+      width: 200px;
+      /* The width is the width of the web page */
+    }
+</style>
 <!-- <div id="map"></div> -->
 
 <script>
@@ -200,7 +200,7 @@
       },
       dataType:'html',
     });
-  }, 2000);
+  }, 1000);
 </script>
 
 <!-- <script>
