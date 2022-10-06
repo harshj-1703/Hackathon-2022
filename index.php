@@ -47,81 +47,81 @@
     </header>
 </div>
 <title>MINING</title>
-			<section class="section section-search" style="background-image: url('./assets/img/2.png');">
-				<div class="container-fluid">
-					<div class="banner-wrapper">
-						<div class="banner-header text-center">
-							<h1 style="font-size: 80px;">Mining Technologies</h1>
+	<section class="section section-search" style="background-image: url('./assets/img/2.png');">
+		<div class="container-fluid">
+			<div class="banner-wrapper">
+				<div class="banner-header text-center">
+					<h1 style="font-size: 80px;">Mining Technologies</h1>
+				</div>
+					
+				<!-- Search -->
+				<div class="search-box">
+					<form action="#" method="post">
+						<div class="form-group search-location">
+							<input type="text" class="form-control" name="locationsearch" placeholder="Search Address,City,State">
+							<span class="form-text" style="color: rgb(54, 52, 52);font-weight:bolder;font-size:larger;">Based on your Location</span>
 						</div>
-                         
-						<!-- Search -->
-						<div class="search-box">
-							<form action="#" method="post">
-								<div class="form-group search-location">
-									<input type="text" class="form-control" name="locationsearch" placeholder="Search Address,City,State">
-									<span class="form-text" style="color: rgb(54, 52, 52);font-weight:bolder;font-size:larger;">Based on your Location</span>
-								</div>
-								<div class="form-group search-info">
-									<input type="text" class="form-control" name="drsearch" placeholder="Search">
-									<span class="form-text" style="color: rgb(54, 52, 52);font-weight:bolder;font-size:larger;">Searching Items And Price</span>
-								</div>
-								<button type="submit" class="btn btn-primary search-btn"><i class="fas fa-search"></i> <span>Search</span></button>
-							</form>
+						<div class="form-group search-info">
+							<input type="text" class="form-control" name="drsearch" placeholder="Search">
+							<span class="form-text" style="color: rgb(54, 52, 52);font-weight:bolder;font-size:larger;">Searching Items And Price</span>
+						</div>
+						<button type="submit" class="btn btn-primary search-btn"><i class="fas fa-search"></i> <span>Search</span></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-specialities">
+		<div class="container-fluid">
+			<div class="section-header text-center">
+				<h2>Different Mining Technologies</h2>
+				<p class="sub-title">We have many high professional educated.</p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-9">
+					<!-- Slider -->
+					<div class="specialities-slider slider">
+						<!-- Slider Item -->
+						<div class="speicality-item text-center">
+							<div class="speicality-img">
+								<img src="./assets/img/1.jpg" class="img-fluid" alt="Speciality" style="border-radius: 50%;height: 150px;">
+								<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+							</div>
+							<p>Features 1</p>
+						</div>
+						<div class="speicality-item text-center">
+							<div class="speicality-img">
+								<img src="./assets/img/3.jpg" class="img-fluid" alt="Speciality" style="border-radius: 50%;height: 150px;">
+								<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+							</div>
+							<p>Features 2</p>
+						</div>
+						<div class="speicality-item text-center">
+							<div class="speicality-img">
+								<img src="./assets/img/4.jpg" class="img-fluid" alt="Speciality" style="border-radius: 50%;height: 150px;">
+								<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+							</div>
+							<p>Features 3</p>
+						</div>
+						<div class="speicality-item text-center">
+							<div class="speicality-img">
+								<img src="./assets/img/2.webp" class="img-fluid" alt="Speciality" style="border-radius: 50%;height: 150px;">
+								<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+							</div>
+							<p>Features 4</p>
+						</div>
+						<div class="speicality-item text-center">
+							<div class="speicality-img">
+								<img src="./assets/img/1.jpeg" class="img-fluid" alt="Speciality" style="border-radius: 50%;height: 150px;">
+								<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+							</div>
+							<p>Features 5</p>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="section section-specialities">
-				<div class="container-fluid">
-					<div class="section-header text-center">
-						<h2>Different Mining Technologies</h2>
-						<p class="sub-title">We have many high professional educated.</p>
-					</div>
-					<div class="row justify-content-center">
-						<div class="col-md-9">
-							<!-- Slider -->
-							<div class="specialities-slider slider">
-								<!-- Slider Item -->
-								<div class="speicality-item text-center">
-									<div class="speicality-img">
-										<img src="./assets/img/1.jpg" class="img-fluid" alt="Speciality" style="border-radius: 50%;height: 150px;">
-										<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-									</div>
-									<p>Features 1</p>
-								</div>
-								<div class="speicality-item text-center">
-									<div class="speicality-img">
-										<img src="./assets/img/3.jpg" class="img-fluid" alt="Speciality" style="border-radius: 50%;height: 150px;">
-										<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-									</div>
-									<p>Features 2</p>
-								</div>
-								<div class="speicality-item text-center">
-									<div class="speicality-img">
-										<img src="./assets/img/4.jpg" class="img-fluid" alt="Speciality" style="border-radius: 50%;height: 150px;">
-										<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-									</div>
-									<p>Features 3</p>
-								</div>
-								<div class="speicality-item text-center">
-									<div class="speicality-img">
-										<img src="./assets/img/2.webp" class="img-fluid" alt="Speciality" style="border-radius: 50%;height: 150px;">
-										<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-									</div>
-									<p>Features 4</p>
-								</div>
-								<div class="speicality-item text-center">
-									<div class="speicality-img">
-										<img src="./assets/img/1.jpeg" class="img-fluid" alt="Speciality" style="border-radius: 50%;height: 150px;">
-										<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-									</div>
-									<p>Features 5</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>   
-			</section>
+			</div>
+		</div>   
+	</section>
 		   
     </div>
     <!-- <div style="text-align:center;">
