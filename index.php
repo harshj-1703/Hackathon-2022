@@ -138,12 +138,15 @@
 											<table class="table table-bordered data-table" style="width: 100%">
 											<thead>
 												<tr>
-                            <th>ID</th>
                             <th>NAME</th>
                             <th>WORK</th>
                             <th>SALARY</th>
                             <th>LATITUDE</th>
                             <th>LOGTITUDE</th>
+							<th>TEMPRATURE</th>
+							<th>HUMIDITY</th>
+							<th>GAS</th>
+							<th>HEIGHT</th>
 												</tr>
 											</thead>
 											<tbody id="tbodytable">
