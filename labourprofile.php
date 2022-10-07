@@ -65,7 +65,7 @@ $_SESSION['id'] = $_GET['id'];
               // output data of each row
               echo "<div id='div1' style='text-align:center;padding:15px;'><table border='2' width='100%' height='20%' style='text-align:center;font-size:25px; id='table'>
               <tr><th>NAME</th><th>WORK</th><th>SALARY</th><th>LATITUDE</th><th>LOGTITUDE</th><th>TEMPRATURE</th><th>HUMIDITY</th>
-              <th>GAS</th><th>HEIGHT</th></tr>";
+              <th>GAS</th><th>DEPTH</th></tr>";
             // echo "<div id='div1' style='text-align:center;'><table border='1' width='100%' height='20%' style='text-align:center;font-size:30px; id='table'>";
               while($row = $result->fetch_assoc()) {
                 echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["salary"] . 
