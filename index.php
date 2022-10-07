@@ -140,13 +140,13 @@
 												<tr>
                             <th>NAME</th>
                             <th>WORK</th>
-                            <th>SALARY</th>
+                            <th>HEARTBEAT</th>
                             <th>LATITUDE</th>
                             <th>LOGTITUDE</th>
 							<th>TEMPRATURE</th>
 							<th>HUMIDITY</th>
 							<th>GAS</th>
-							<th>HEIGHT</th>
+							<th>DEPTH</th>
 												</tr>
 											</thead>
 											<tbody id="tbodytable">

@@ -19,11 +19,11 @@ $row1 = $resultll->fetch_assoc();
 if ($result->num_rows > 0) {
   // output data of each row
   echo "<div id='div1' style='text-align:center;padding:15px;'><table border='2' width='100%' height='20%' style='text-align:center;font-size:25px; id='table'>
-  <tr><th>NAME</th><th>WORK</th><th>SALARY</th><th>LATITUDE</th><th>LOGTITUDE</th><th>TEMPRATURE</th><th>HUMIDITY</th>
+  <tr><th>NAME</th><th>WORK</th><th>HEARTBEAT</th><th>LATITUDE</th><th>LOGTITUDE</th><th>TEMPRATURE</th><th>HUMIDITY</th>
   <th>GAS</th><th>DEPTH</th></tr>";
   // echo "<div id='div1' style='text-align:center;'><table border='1' width='100%' height='20%' style='text-align:center;font-size:30px; id='table'>";
   while($row = $result->fetch_assoc()) {
-    echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["salary"] . 
+    echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["heartbeat"] . 
     "</td><td>" . $row["latitude"] . "</td><td>" . $row["logtitude"] . "</td><td>" . $row["temprature"] . "</td><td>"
     . $row["humidity"] . "</td><td>". $row["gas"] ."</td><td>". $row["height"] ."</td><tr>";
   }
@@ -56,6 +56,7 @@ $conn->close();
       const marker = new google.maps.Marker({
       position: location,
       map: map,
+      mapTypeId: 'satellite',
       });
   }
   window.initMap = initMap;
