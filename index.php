@@ -27,6 +27,9 @@
                     <li>
                         <a href="./login.html">Login</a>
                     </li>
+					<li>
+                        <a href="./sitemap.php">MINE SITE MAP</a>
+                    </li>
                 </ul>		 
             </div>		 
             <ul class="nav header-navbar-rht">
@@ -141,8 +144,8 @@
                             <th>NAME</th>
                             <th>WORK</th>
                             <th>HEARTBEAT</th>
-                            <th>LATITUDE</th>
-                            <th>LOGTITUDE</th>
+                            <!-- <th>LATITUDE</th>
+                            <th>LOGTITUDE</th> -->
 							<th>TEMPRATURE</th>
 							<th>HUMIDITY</th>
 							<th>GAS</th>
@@ -197,7 +200,7 @@
   {
     $.ajax({
       type: "GET",
-      url: 'http://localhost/Hackathon 2022/get_data.php', // CHANGE THAT
+      url: 'http://localhost/Hackathon 2022-01/get_data.php', // CHANGE THAT
       success: function(res){
         $('#tbodytable').html(res);
       },

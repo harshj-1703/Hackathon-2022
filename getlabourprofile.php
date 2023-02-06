@@ -1,9 +1,9 @@
 <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <script
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8pAS6ZzALaUJTzJBx8_5vuYRcKdS15rE&callback=initMap&v=weekly"
   defer
-></script>
+></script> -->
 
 <?php
 session_start();
@@ -11,20 +11,20 @@ require './connect.php';
 // $id = $_GET['id'];
 $id = $_SESSION['id'];
 $sql = "SELECT * FROM labours where id=$id";
-$ll = "SELECT latitude,logtitude FROM labours where id=$id";
+// $ll = "SELECT latitude,logtitude FROM labours where id=$id";
 $result = $conn->query($sql);
-$resultll = $conn->query($ll);
-$row1 = $resultll->fetch_assoc();
+// $resultll = $conn->query($ll);
+// $row1 = $resultll->fetch_assoc();
 
 if ($result->num_rows > 0) {
   // output data of each row
   echo "<div id='div1' style='text-align:center;padding:15px;'><table border='2' width='100%' height='20%' style='text-align:center;font-size:25px; id='table'>
-  <tr><th>NAME</th><th>WORK</th><th>HEARTBEAT</th><th>LATITUDE</th><th>LOGTITUDE</th><th>TEMPRATURE</th><th>HUMIDITY</th>
+  <tr><th>NAME</th><th>WORK</th><th>HEARTBEAT</th><th>TEMPRATURE</th><th>HUMIDITY</th>
   <th>GAS</th><th>DEPTH</th></tr>";
   // echo "<div id='div1' style='text-align:center;'><table border='1' width='100%' height='20%' style='text-align:center;font-size:30px; id='table'>";
   while($row = $result->fetch_assoc()) {
     echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["heartbeat"] . 
-    "</td><td>" . $row["latitude"] . "</td><td>" . $row["logtitude"] . "</td><td>" . $row["temprature"] . "</td><td>"
+    "</td><td>" . $row["temprature"] . "</td><td>"
     . $row["humidity"] . "</td><td>". $row["gas"] ."</td><td>". $row["height"] ."</td><tr>";
   }
   echo "</table></div>";
@@ -35,10 +35,10 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 
-<div id="latitude" style="display:none;"> <?php echo $row1['latitude']; ?> </div>
-<div id="logtitude" style="display:none;"> <?php echo $row1['logtitude']; ?> </div>
+<!-- <div id="latitude" style="display:none;"> <?php // echo $row1['latitude']; ?> </div>
+<div id="logtitude" style="display:none;"> <?php // echo $row1['logtitude']; ?> </div> -->
 
-<script>
+<!-- <script>
   var latbhai = document.getElementById('latitude').innerHTML;
   var logbhai = document.getElementById('logtitude').innerHTML;
   // Initialize and add the map
@@ -60,4 +60,4 @@ $conn->close();
       });
   }
   window.initMap = initMap;
-</script>
+</script> -->
