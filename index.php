@@ -30,6 +30,9 @@
 					<li>
                         <a href="./sitemap.php">MINE SITE MAP</a>
                     </li>
+					<li>
+                        <a href="./siteDetails.php">SITE DETAILS</a>
+                    </li>
                 </ul>		 
             </div>		 
             <ul class="nav header-navbar-rht">
