@@ -31,7 +31,7 @@
                         <a href="./sitemap.php">MINE SITE MAP</a>
                     </li>
 					<li>
-                        <a href="./siteDetails.php">SITE DETAILS</a>
+                        <a href="./siteDetails.html">SITE DETAILS</a>
                     </li>
                 </ul>		 
             </div>		 
