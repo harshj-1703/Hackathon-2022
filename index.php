@@ -33,6 +33,9 @@
 					<li>
                         <a href="./siteDetails.html">SITE DETAILS</a>
                     </li>
+					<li>
+                        <a href="./graphs.php">GRAPHS</a>
+                    </li>
                 </ul>		 
             </div>		 
             <ul class="nav header-navbar-rht">
