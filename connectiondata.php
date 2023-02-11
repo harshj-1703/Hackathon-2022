@@ -63,12 +63,12 @@ $result21 = $conn->query($sql21);
                 {
                         while($row = $result11->fetch_assoc())
                         {
-                            echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["heartbeat"] . 
-                                "</td><td>" . $row["temprature"] . "</td><td>"
-                                . $row["humidity"] . "</td><td>". $row["gas"] ."</td><td>". $row["height"] ."</td><tr>";
+                            echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td>
+                            <td class='hb'>". $row["heartbeat"] . 
+                                "</td><td class='temp'>" . $row["temprature"] . "</td><td class='humidity'>"
+                                . $row["humidity"] . "</td><td class='gas'>". $row["gas"] ."</td><td class='height'>". $row["height"] ."</td><tr>";
                         }
                 }
-                
             }
         }
         else
@@ -122,9 +122,9 @@ $result21 = $conn->query($sql21);
                 {
                     while($row = $result11->fetch_assoc())
                     {
-                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["heartbeat"] . 
-                            "</td><td>" . $row["temprature"] . "</td><td>"
-                            . $row["humidity"] . "</td><td>". $row["gas"] ."</td><td>". $row["height"] ."</td><tr>";
+                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td class='hb'>". $row["heartbeat"] . 
+                            "</td><td class='temp'>" . $row["temprature"] . "</td><td class='humidity'>"
+                            . $row["humidity"] . "</td><td class='gas'>". $row["gas"] ."</td><td class='height'>". $row["height"] ."</td><tr>";
                     }
                 
                 }
@@ -181,9 +181,9 @@ $result21 = $conn->query($sql21);
                 {
                     while($row = $result11->fetch_assoc())
                     {
-                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["heartbeat"] . 
-                            "</td><td>" . $row["temprature"] . "</td><td>"
-                            . $row["humidity"] . "</td><td>". $row["gas"] ."</td><td>". $row["height"] ."</td><tr>";
+                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td class='hb'>". $row["heartbeat"] . 
+                            "</td><td class='temp'>" . $row["temprature"] . "</td><td class='humidity'>"
+                            . $row["humidity"] . "</td><td class='gas'>". $row["gas"] ."</td><td class='height'>". $row["height"] ."</td><tr>";
                     }
                 
                 }
@@ -240,9 +240,9 @@ $result21 = $conn->query($sql21);
                 {
                     while($row = $result11->fetch_assoc())
                     {
-                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["heartbeat"] . 
-                            "</td><td>" . $row["temprature"] . "</td><td>"
-                            . $row["humidity"] . "</td><td>". $row["gas"] ."</td><td>". $row["height"] ."</td><tr>";
+                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td class='hb'>". $row["heartbeat"] . 
+                            "</td><td class='temp'>" . $row["temprature"] . "</td><td class='humidity'>"
+                            . $row["humidity"] . "</td><td class='gas'>". $row["gas"] ."</td><td class='height'>". $row["height"] ."</td><tr>";
                     }
                 
                 }
@@ -299,9 +299,9 @@ $result21 = $conn->query($sql21);
                 {
                     while($row = $result11->fetch_assoc())
                     {
-                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["heartbeat"] . 
-                            "</td><td>" . $row["temprature"] . "</td><td>"
-                            . $row["humidity"] . "</td><td>". $row["gas"] ."</td><td>". $row["height"] ."</td><tr>";
+                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td class='hb'>". $row["heartbeat"] . 
+                            "</td><td class='temp'>" . $row["temprature"] . "</td><td class='humidity'>"
+                            . $row["humidity"] . "</td><td class='gas'>". $row["gas"] ."</td><td class='height'>". $row["height"] ."</td><tr>";
                     }
                 
                 }
@@ -358,9 +358,9 @@ $result21 = $conn->query($sql21);
                 {
                     while($row = $result11->fetch_assoc())
                     {
-                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["heartbeat"] . 
-                            "</td><td>" . $row["temprature"] . "</td><td>"
-                            . $row["humidity"] . "</td><td>". $row["gas"] ."</td><td>". $row["height"] ."</td><tr>";
+                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td class='hb'>". $row["heartbeat"] . 
+                            "</td><td class='temp'>" . $row["temprature"] . "</td><td class='humidity'>"
+                            . $row["humidity"] . "</td><td class='gas'>". $row["gas"] ."</td><td class='height'>". $row["height"] ."</td><tr>";
                     }
                 
                 }
@@ -417,9 +417,9 @@ $result21 = $conn->query($sql21);
                 {
                     while($row = $result11->fetch_assoc())
                     {
-                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["heartbeat"] . 
-                            "</td><td>" . $row["temprature"] . "</td><td>"
-                            . $row["humidity"] . "</td><td>". $row["gas"] ."</td><td>". $row["height"] ."</td><tr>";
+                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td class='hb'>". $row["heartbeat"] . 
+                            "</td><td class='temp'>" . $row["temprature"] . "</td><td class='humidity'>"
+                            . $row["humidity"] . "</td><td class='gas'>". $row["gas"] ."</td><td class='height'>". $row["height"] ."</td><tr>";
                     }
                 
                 }
@@ -476,9 +476,9 @@ $result21 = $conn->query($sql21);
                 {
                     while($row = $result11->fetch_assoc())
                     {
-                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td>". $row["heartbeat"] . 
-                            "</td><td>" . $row["temprature"] . "</td><td>"
-                            . $row["humidity"] . "</td><td>". $row["gas"] ."</td><td>". $row["height"] ."</td><tr>";
+                        echo "<tr><td><a href='./labourprofile.php?id=".$row['id']."'>" . $row["name"]. "</a></td><td>" . $row["work"]. "</td><td class='hb'>". $row["heartbeat"] . 
+                            "</td><td class='temp'>" . $row["temprature"] . "</td><td class='humidity'>"
+                            . $row["humidity"] . "</td><td class='gas'>". $row["gas"] ."</td><td class='height'>". $row["height"] ."</td><tr>";
                     }
                 
                 }

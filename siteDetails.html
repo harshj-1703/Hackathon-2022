@@ -33,4 +33,55 @@
     });
   }, 1000);
 </script>
+<script>
+setInterval(() => {
+  // document.getElementsById('hb').style.background="red";
+  elements = document.getElementsByClassName('hb');
+  for (var i = 0; i < elements.length; i++) {
+    // console.log(elements[i].innerHTML);
+    if(elements[i].innerHTML > 125)
+    {
+      elements[i].style.background="red";
+    }
+  }
+
+  elements1 = document.getElementsByClassName('temp');
+  for (var i = 0; i < elements1.length; i++) {
+    // console.log(elements[i].innerHTML);
+    if(elements1[i].innerHTML > 55)
+    {
+      elements1[i].style.background="red";
+    }
+  }
+
+  elements2 = document.getElementsByClassName('humidity');
+  for (var i = 0; i < elements2.length; i++) {
+    // console.log(elements[i].innerHTML);
+    if(elements2[i].innerHTML > 55)
+    {
+      elements2[i].style.background="red";
+    }
+  }
+
+  elements3 = document.getElementsByClassName('gas');
+  for (var i = 0; i < elements3.length; i++) {
+    // console.log(elements[i].innerHTML);
+    if(elements3[i].innerHTML > 100)
+    {
+      elements3[i].style.background="red";
+    }
+  }
+
+  elements4 = document.getElementsByClassName('height');
+  for (var i = 0; i < elements4.length; i++) {
+    // console.log(elements[i].innerHTML);
+    if(elements4[i].innerHTML > 70)
+    {
+      elements4[i].style.background="red";
+    }
+  }
+}, 1000);
+
+</script>
+
 </html>
