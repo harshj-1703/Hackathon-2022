@@ -118,6 +118,10 @@ chart.render();
 
 }
 
+setTimeout(function(){
+   window.location.reload(1);
+}, 5000);
+
 </script>
 </head>
 <body>
